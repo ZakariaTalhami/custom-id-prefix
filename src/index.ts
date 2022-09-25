@@ -11,7 +11,7 @@ const boot = async () => {
 const startServer = async () => {
   const { app } = await import("./app");
 
-  const port: number = parseInt(process.env.PORT as string, 10) || 8080;
+  const port: number = parseInt(process.env.PORT as string, 10) || 8888;
 
   app.listen(port, () => {
     console.log(`------------ Listening on port ${port} ------------`);

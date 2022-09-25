@@ -1,7 +1,7 @@
 import { Router } from "express";
-import { createExampleRouter } from "./create";
+import { createUserRouter } from "./create";
 
-const BASE_URL = "/example";
+const BASE_URL = "/user";
 const openRouter = Router();
 const secureRouter = Router();
 
@@ -10,7 +10,7 @@ const secureRouter = Router();
 // ************************************
 
 // ********** SECURED ROUTES **********
-secureRouter.use(BASE_URL, createExampleRouter);
+secureRouter.use(BASE_URL, createUserRouter);
 // ************************************
 
-export { secureRouter as secureExampleRouter, openRouter as openExampleRouter };
+export { secureRouter as secureUserRouter, openRouter as openUserRouter };
