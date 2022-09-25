@@ -1,7 +1,7 @@
 {
-  "name": "backend",
+  "name": "custom-id-prefix",
   "version": "1.0.0",
-  "description": "Backend",
+  "description": "Prototype of handling IDs with prefixes",
   "main": "index.js",
   "scripts": {
     "start": "ts-node-dev src/index.ts"

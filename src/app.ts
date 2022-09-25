@@ -1,6 +1,5 @@
 import express, { json, NextFunction, Request, Response } from "express";
 import { HttpErrorHandlerMiddleware } from "./app/middleware";
-import { authenticationMiddleware } from "./app/middleware/authentication";
 import { openRouter, secureRouter } from "./app/route";
 
 const app = express();
@@ -11,7 +10,7 @@ app.use(json());
 app.use(openRouter);
 
 // AUTHENTICATION
-app.use(authenticationMiddleware);
+// app.use(authenticationMiddleware);
 
 // SECURE ROUTER
 app.use(secureRouter);
